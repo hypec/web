@@ -35,91 +35,91 @@
 <script src="/jquery.fullPage.min.js"></script>
 <script>
 $(function(){
-	if($.browser.msie && $.browser.version < 10){
-		$('body').addClass('ltie10');
-	}
-	$.fn.fullpage({
-		verticalCentered: false,
-		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7'],
-		navigation: true,
-		navigationTooltips: ['COMMITTED', 'COMPANY PROFILE', 'CORPORATE CULTRE', 'DESIGN CAPACITY', 'PROCUREMENT CAPACITY', 'PROJECT PERFORMANCE', 'SOCIAL RESPONSIBIILITY']
-	});
-	
-	$('.section7 h3').click(function(){
-		$('.section7 form').css('width','450px').css("margin-top","150px").css("background-color","#f1f1f1");
-		$('.section7 form .formdiv').show('slow');
-		$('.section7 h3').removeClass('form-btn').css("background",'none').css("border-color", 'none');
-	});
+  if($.browser.msie && $.browser.version < 10){
+    $('body').addClass('ltie10');
+  }
+  $.fn.fullpage({
+    verticalCentered: false,
+    anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7'],
+    navigation: true,
+    navigationTooltips: ['COMMITTED', 'COMPANY PROFILE', 'CORPORATE CULTRE', 'DESIGN CAPACITY', 'PROCUREMENT CAPACITY', 'PROJECT PERFORMANCE', 'SOCIAL RESPONSIBIILITY']
+  });
+  
+  $('.section7 h3').click(function(){
+    $('.section7 form').css('width','450px').css("margin-top","150px").css("background-color","#f1f1f1");
+    $('.section7 form .formdiv').show('slow');
+    $('.section7 h3').removeClass('form-btn').css("background",'none').css("border-color", 'none');
+  });
 });
 
 
 function homeleftmenu(){
-	if($('#home-leftmenu').is(':visible')){
-		$('body').css("left", "0px").css("position","absolute").css('width', '100%');
-		$('#home-leftmenu').hide();
-	}else{
-		$('body').css("left", "320px").css("position","absolute").css('width', '100%');
-		$('#home-leftmenu').show().css("left", '0px');
-	}
+  if($('#home-leftmenu').is(':visible')){
+    $('body').css("left", "0px").css("position","absolute").css('width', '100%');
+    $('#home-leftmenu').hide();
+  }else{
+    $('body').css("left", "320px").css("position","absolute").css('width', '100%');
+    $('#home-leftmenu').show().css("left", '0px');
+  }
 }
 
 function closehomemenu(){
-	$('body').css("left", "0px").css("position","absolute").css('width', '100%');
-	$('#home-leftmenu').hide();
+  $('body').css("left", "0px").css("position","absolute").css('width', '100%');
+  $('#home-leftmenu').hide();
 }
 function contactusform(){
-	var username = $('#username').val();
-	var useremail = $('#useremail').val();
-	var userbody = $('#userbody').val();
-	//alert(userbody);
-	
-	var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-	if (filter.test(useremail)){
-		$.post(
-			'/api/sendmail.php',
-			{
-				"key":"<?php echo md5("FS".date("Y-m-d H"));?>",
-				"username":username,
-				"useremail":useremail,
-				"content":userbody
-			},
-			function(data){
-				
-				alert("Send Successful");
-				$('#username').val('');
-				$('#useremail').val('');
-				$('#userbody').val('');
-			}
-		);
-	}else{
-		alert("Please input correct email!");
-	}
+  var username = $('#username').val();
+  var useremail = $('#useremail').val();
+  var userbody = $('#userbody').val();
+  //alert(userbody);
+  
+  var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  if (filter.test(useremail)){
+    $.post(
+      '/api/sendmail.php',
+      {
+        "key":"<?php echo md5("FS".date("Y-m-d H"));?>",
+        "username":username,
+        "useremail":useremail,
+        "content":userbody
+      },
+      function(data){
+        
+        alert("Send Successful");
+        $('#username').val('');
+        $('#useremail').val('');
+        $('#userbody').val('');
+      }
+    );
+  }else{
+    alert("Please input correct email!");
+  }
 }
 </script>
 
 </head>
 <body class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
-	
+  
   <?php print $page_top; ?>
   <!-- start left menu -->
-	<a href="javascript:;" class="icon-menu link-menu jsc-sidebar-trigger" id="homemenu-trigger" onclick="homeleftmenu();">Menu</a> 
-	<div id="home-leftmenu" style="display:none;">
-		<div id="sidr-main">
-			<div id="sidr-close" onclick="closehomemenu();" style="cursor:pointer;"><img src="/imgs/close.png" /></div>
-			<div id="site-navigation-wrap">
-				<nav id="site-navigation" class="navigation main-navigation clr" role="navigation">
-					<div id="main-menu" class="menu-main-container">
-					<?php 
-						$main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
-						print drupal_render($main_menu_tree);
-					?>
-					</div>
-				</nav>
-			</div>
-		</div>
-	</div> 
-	<!-- left menu -->
+  <a href="javascript:;" class="icon-menu link-menu jsc-sidebar-trigger" id="homemenu-trigger" onclick="homeleftmenu();">Menu</a> 
+  <div id="home-leftmenu" style="display:none;">
+    <div id="sidr-main">
+      <div id="sidr-close" onclick="closehomemenu();" style="cursor:pointer;"><img src="/imgs/close.png" /></div>
+      <div id="site-navigation-wrap">
+        <nav id="site-navigation" class="navigation main-navigation clr" role="navigation">
+          <div id="main-menu" class="menu-main-container">
+          <?php 
+            $main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
+            print drupal_render($main_menu_tree);
+          ?>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div> 
+  <!-- left menu -->
   <?php print $page; ?>
   <?php print $page_bottom; ?>
 </body>

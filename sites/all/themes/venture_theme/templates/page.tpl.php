@@ -65,9 +65,7 @@
  */
 ?>
 <div id="wrap">
-	
   <div id="header-wrap" class="clr fixed-header">
-
     <header id="header" class="site-header clr container">
       <div id="logo" class="clr">
         <?php if (theme_get_setting('image_logo','venture_theme')): ?>
@@ -94,8 +92,6 @@
       </div>
     </header>
   </div>
-  
-  
 <!-- header big img -->
 <?php if ($title && !$is_front && isset($node)): ?>
 <div id="headerimg<?php print $node->vid;?>" class="headerimg">	
@@ -162,6 +158,7 @@
   <?php endif; ?>
   <?php endif; ?>
 
+
   <?php if ($page['preface_first'] || $page['preface_middle'] || $page['preface_last']  || $page['header']): ?>
   <div id="preface-wrap" class="site-preface clr">
     <div id="preface" class="clr container">
@@ -213,7 +210,7 @@
       <?php endif; ?>
     </div>
   </div>
- 
+
   <?php if ($page['footer_first'] || $page['footer_second'] || $page['footer_third']  || $page['footer']): ?>
   <div id="footer-wrap" class="site-footer clr">
     <div id="footer" class="clr container">
@@ -247,16 +244,6 @@
   <footer id="copyright-wrap" class="clear">
 		<div class="art">
 			<div class="b2-no-h">
-			<!--
-				<p>
-				<img src="/imgs/icon/FB.png" />
-				<img src="/imgs/icon/google.png" />
-				<img src="/imgs/icon/instagram.png" />
-				<img src="/imgs/icon/tumblr.png" />
-				<img src="/imgs/icon/twitter.png" />
-				<img src="/imgs/icon/youtube.png" />
-				</p>
-			-->	
 				<p>
 					<img src="/sites/all/themes/venture_theme/logo-no-text.png" class="footer_logo" style="margin-top:10px;margin-bottom:0px;"/>
 					<div class="footer_logo_text" style="width:132px;padding:0px;">HYPEC INC</div>
