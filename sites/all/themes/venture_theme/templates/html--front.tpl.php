@@ -44,7 +44,7 @@ $(function(){
     navigation: true,
     navigationTooltips: ['COMMITTED', 'COMPANY PROFILE', 'CORPORATE CULTRE', 'DESIGN CAPACITY', 'PROCUREMENT CAPACITY', 'PROJECT PERFORMANCE', 'SOCIAL RESPONSIBIILITY']
   });
-  
+
   $('.section7 h3').click(function(){
     $('.section7 form').css('width','450px').css("margin-top","150px").css("background-color","#f1f1f1");
     $('.section7 form .formdiv').show('slow');
@@ -72,7 +72,7 @@ function contactusform(){
   var useremail = $('#useremail').val();
   var userbody = $('#userbody').val();
   //alert(userbody);
-  
+
   var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
   if (filter.test(useremail)){
     $.post(
@@ -84,7 +84,7 @@ function contactusform(){
         "content":userbody
       },
       function(data){
-        
+
         alert("Send Successful");
         $('#username').val('');
         $('#useremail').val('');
@@ -96,14 +96,14 @@ function contactusform(){
   }
 }
 </script>
- 
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-43066377-2', 'auto');
+  ga('create', 'UA-62759978-1', 'auto');
   ga('send', 'pageview');
 
 </script>
@@ -111,7 +111,7 @@ function contactusform(){
 </head>
 <body class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
-  
+
   <?php print $page_top; ?>
   <!-- start left menu -->
   <a href="javascript:;" class="icon-menu link-menu jsc-sidebar-trigger" id="homemenu-trigger" onclick="homeleftmenu();">Menu</a> 
