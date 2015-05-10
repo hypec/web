@@ -8,6 +8,7 @@
 		$useremail = isset($_POST['useremail'])?$_POST['useremail']:"";
 		$content = isset($_POST['content'])?$_POST['content']:"";
 	
+	
 		if($useremail){
 			$to = "info@hypecinc.com";
 			$subject = "CONTACT US FORM - HYPEC";
@@ -21,6 +22,7 @@
 	
 			mail($to,$subject,$txt,$headers);
 		}
+	
 	}
 	
 ?>	

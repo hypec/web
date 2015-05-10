@@ -1180,9 +1180,15 @@ div.firstbox p{
 
 }
 
-div.country {
-
+.page-node-8 div.country div{
+	width:27%;
+	height:400px;
 }
+.page-node-8 #content-wrap .content div.country h3{
+	text-align:center;
+}
+
+
 div.country div{
   width:45%;
   text-align:center;
@@ -1227,10 +1233,12 @@ div.country div.cdiv{
 div[class^="headerimg"]	 {
   display:none;
 }
+/*
 h1.page-title {
   letter-spacing:10px;
   text-transform:Uppercase;
 }
+
 #headerimg2 h1.page-title,#headerimg8 h1.page-title, #headerimg5 h1.page-title, #headerimg6 h1.page-title, #headerimg9 h1.page-title, #headerimg10 h1.page-title, #headerimg11 h1.page-title,#headerimg12 h1.page-title,#headerimg13 h1.page-title,#headerimg14 h1.page-title,#headerimg15 h1.page-title,#headerimg16 h1.page-title,#headerimg17 h1.page-title,#headerimg18 h1.page-title{
   margin:0px auto;
   color:#fff;
@@ -1255,6 +1263,7 @@ h1.page-title {
 #headerimg8 h1.page-title {
   margin-top:100px;
 }
+
 #headerimg2 {
   display:block;
   background:url("/imgs/pages/1.jpg");
@@ -1277,6 +1286,14 @@ h1.page-title {
   margin-top:0px;
   padding-top:150px;
 }
+#headerimg2 h1.page-title {
+  margin-top:170px;
+}
+
+.pt_vid_2, .pt_vid_8, .pt_vid_6,  .pt_vid_9, .pt_vid_10, .pt_vid_11,.pt_vid_12,.pt_vid_13,.pt_vid_14,.pt_vid_15,.pt_vid_16,.pt_vid_17,.pt_vid_18{ display:none;}
+
+*/
+h1.page-title {text-transform:uppercase; letter-spacing:5px;}
 .pageheaderimg5 {
   display:block;
   background:url("/imgs/pages/5.jpg");
@@ -1296,11 +1313,6 @@ h1.page-title {
   padding:20px 20px;
   margin-top:400px;
 }
-#headerimg2 h1.page-title {
-  margin-top:170px;
-}
-
-.pt_vid_2, .pt_vid_8, .pt_vid_6,  .pt_vid_9, .pt_vid_10, .pt_vid_11,.pt_vid_12,.pt_vid_13,.pt_vid_14,.pt_vid_15,.pt_vid_16,.pt_vid_17,.pt_vid_18{ display:none;}
 
 .profile {
   width:100%;
@@ -1400,7 +1412,7 @@ p.grey_radiu_div {
   text-align:Justify;
   text-justify:inter-ideograph;
 }	
-div.country div{ 
+.page-node-8 div.country div, div.country div{ 
   width:100%;
   height:auto;
   margin-top:30px;
@@ -1425,7 +1437,7 @@ div.logo_div div{
 #copyright-wrap .art ul li{
   list-style:none;
 }
-
+/*
 #headerimg6 h1.page-title, #headerimg9 h1.page-title, #headerimg10 h1.page-title, #headerimg11 h1.page-title,#headerimg12 h1.page-title,#headerimg13 h1.page-title,#headerimg14 h1.page-title,#headerimg15 h1.page-title,#headerimg16 h1.page-title,#headerimg17 h1.page-title,#headerimg18 h1.page-title{
   margin:0px auto;
   color:#fff;
@@ -1448,7 +1460,7 @@ div.logo_div div{
   margin-top:0px;
   padding-top:150px;
 }
-
+*/
 
 
 /*****************************************/

@@ -55,7 +55,7 @@
 .section4 { background:url(/images/section4.jpg); background-size:100% 100%;} 
 .section5 { background:url(/images/section5.jpg); background-size:100% 100%;} 
 .section6 { background:url(/images/section6.jpg); background-size:100% 100%;} 
-.section7 { background:url(/images/section7.jpg); background-size:100% 100%;} 
+.section7 { background:url(/images/section7.jpg); background-size:100% top;} 
 
 
 .section1 h2{ 
@@ -64,13 +64,25 @@
   font-size:5em;
   letter-spacing:10px;
   margin-left:100px;
-  border-bottom:3px solid #fff;
   width:570px;
   text-align:center;
   padding-bottom:5px;
   margin-bottom:0px;
   margin-top:300px;
+  background: url(/images/blue_bg.png);
+  padding: 20px;
 } 
+.section1 .p11 {
+	background: url(/images/blue_bg.png);
+  padding: 20px;
+  margin-top:0px;
+}
+.section1 .p11 span{
+	display:block;
+	border-top:3px solid #fff;
+	margin-bottom:20px;
+}
+
 .section1 p{
   width:570px;
   margin-left:100px;
