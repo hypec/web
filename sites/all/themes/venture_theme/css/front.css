@@ -61,26 +61,27 @@
 .section1 h2{ 
   color:#fff;
   font-family:"HelveticaNeueW02-UltLtE 739241";
-  font-size:5em;
-  letter-spacing:10px;
+  font-size:4em;
+  letter-spacing:15px;
   margin-left:100px;
   width:570px;
   text-align:center;
   padding-bottom:5px;
   margin-bottom:0px;
-  margin-top:300px;
+  margin-top:400px;
   background: url(/images/blue_bg.png);
   padding: 20px;
 } 
 .section1 .p11 {
-	background: url(/images/blue_bg.png);
-  padding: 20px;
+  background: url(/images/blue_bg.png);
+  padding: 0 20px 20px;
   margin-top:0px;
+  text-align: center;
 }
 .section1 .p11 span{
-	display:block;
-	border-top:3px solid #fff;
-	margin-bottom:20px;
+  display:block;
+  border-top:3px solid #fff;
+  margin-bottom:20px;
 }
 
 .section1 p{
@@ -320,6 +321,7 @@ margin-bottom:20px;
   padding: 1em 1.75em;
   background-color: #36b3a8;
 }
+
 #homemenu-trigger {
   width: 100px;
   /* height: 100px; */
@@ -336,9 +338,17 @@ margin-bottom:20px;
   font-family:"HelveticaNeueW02-UltLtE 739241";
   text-align:center;
   text-decoration: blink;
-    letter-spacing: 2px;
+  letter-spacing: 2px;
+  background: white;
+  transition: background-color 0.5s;
+  background-color: #999999;
+  background-color: rgba(153,153,153,0.2);
 }
 
+#homemenu-trigger span {
+  color: white;
+  font-weight: bold;
+}
 #home-leftmenu {
   font-family: 'Helvetica Neue', Helvetica, Arial;
   position: absolute;
@@ -379,7 +389,7 @@ margin-bottom:20px;
   color:#fff;
 }
 .section1 .logotext {
-    position: absolute;
+  position: absolute;
   top: 120px;
   width: 100px;
   font-size: 0.8em;

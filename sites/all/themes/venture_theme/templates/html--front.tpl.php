@@ -114,7 +114,7 @@ function contactusform(){
 
   <?php print $page_top; ?>
   <!-- start left menu -->
-  <a href="javascript:;" class="icon-menu link-menu jsc-sidebar-trigger" id="homemenu-trigger" onclick="homeleftmenu();">Menu</a> 
+  <a href="javascript:;" class="icon-menu link-menu jsc-sidebar-trigger" id="homemenu-trigger" onclick="homeleftmenu();"><span>Menu</span></a> 
   <div id="home-leftmenu" style="display:none;">
     <div id="sidr-main">
       <div id="sidr-close" onclick="closehomemenu();" style="cursor:pointer;"><img src="/imgs/close.png" /></div>
