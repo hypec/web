@@ -48,7 +48,13 @@
   color:#fff;
 }
 
-  
+.bg51 p, .bg52 p, .bg53 p, .bg54 p {
+	background:url(/images/30x_checkmark.png) 0px 2px no-repeat; 
+	background-size:left top;
+	background-repeat:no-repeat;
+	padding-left:30px;
+}
+
 .section1 { background:url(/images/section1.jpg); background-size:100% 100%;} 
 .section2 { background:url(/images/section2.jpg); background-size:100% 100%;} 
 .section3 { background:url(/images/section3.jpg); background-size:100% 100%;} 
