@@ -147,7 +147,8 @@ hr { border: solid #eee; border-width: 1px 0 0; clear: both; height: 0; margin: 
 #header { text-align: left; position: relative; padding: 0px 0; }
 /*logo*/
 #logo img { display: block; max-width: 100%; 
-height:80px;
+height:70px;
+padding-top:10px;
 }
 #logo a { color: #000; font-size: 1.500em; text-decoration: none; }
 /*fixed header*/
@@ -1095,11 +1096,24 @@ div.clear {
   color:rgba(26,26,26,.7);
 }
 .footer_logo{
-  padding:5px;
+  /*padding:5px;*/
   border:1px solid #ccc;
-  background:#fff;
-  width:120px;
+ /* background:#fff;*/
+  width:100px;
+  border:none;
 }
+
+.footer_logo_text{
+	margin-top:-20px; 
+	width:100px;
+	text-align:center;
+	font-size:1em;
+	font-family:"HelveticaNeueW02-UltLtE 739241";
+	font-weight:bold;
+	letter-spacing:2px;
+	color:#000;
+}
+
 #copyright-wrap .art div.b2-no-h2{
   width:55%;
   margin-left:10%;
@@ -1235,8 +1249,8 @@ div.logo_div div{
 }
 .page-node #content-wrap div.logo_div div img{
   border:2px solid #ddd;
-  width:80%;
-  height:60px;
+  width:95%;
+  height:90px;
 }
 div.country div.cdiv{
   height:auto;
@@ -1413,7 +1427,6 @@ p.grey_radiu_div {
   float:left;
 
 }
-.footer_logo_text{margin:0px;}
 @media screen and (max-width: 528px) {
   .page-node #content-wrap img.demand_imgs {
     width:80%;

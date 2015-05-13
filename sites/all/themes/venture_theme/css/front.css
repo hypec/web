@@ -49,10 +49,11 @@
 }
 
 .bg51 p, .bg52 p, .bg53 p, .bg54 p {
-	background:url(/images/30x_checkmark.png) 0px 2px no-repeat; 
+	/*background:url(/images/30x_checkmark.png) 0px 2px no-repeat; 
 	background-size:left top;
 	background-repeat:no-repeat;
 	padding-left:30px;
+	*/
 }
 
 .section1 { background:url(/images/section1.jpg); background-size:100% 100%;} 
@@ -74,15 +75,16 @@
   text-align:center;
   padding-bottom:5px;
   margin-bottom:0px;
-  margin-top:400px;
+  margin-top:300px;
   background: url(/images/blue_bg.png);
   padding: 20px;
 } 
 .section1 .p11 {
   background: url(/images/blue_bg.png);
-  padding: 0 20px 20px;
-  margin-top:0px;
-  text-align: center;
+  padding: 0 50px 20px;
+  margin-top: 0px;
+  text-align: justify;
+  width: 510px;
 }
 .section1 .p11 span{
   display:block;
@@ -123,28 +125,45 @@
 .section3 p{
   /*color:#204385;*/
   color:#fff;
-  width: 70%;
+  width: 65%;
   margin-top:25px;
+  text-align: justify;
 }
 
 /* page 3 */
 .section2 strong{
-    width: 750px;
+    width: 780px;
     text-align: center;
-    margin: 100px auto;
+    margin: 100px auto 30px;
     display: block;
     /*
     border-bottom: 3px solid #3A4E83;
     color:#3A4E83;
     */
-    margin-bottom:20px;
-    border-bottom: 3px solid #fff;
+    margin-bottom:0px;
+    /*border-bottom: 3px solid #fff;*/
     color:#fff;
+	
+  background: url(/images/blue_bg.png);
+}
+.section2 .p1{
+	padding-top:0px;
+	color:#fff;
+	width:780px;
+	background: url(/images/blue_bg.png);
+}
+.section2 .p1 span{
+  display:block;
+  border-top:3px solid #fff;
+  width:720px;
+  margin:0px auto;
+  margin-bottom:30px;
 }
 .section2 p{
-  margin-top:0px;
+  margin:0px auto;
+  padding:20px 0px;
   text-align:center;
-  color:#3A4E83;
+  /*color:#3A4E83;*/
 }
 
 /* page 4 */
@@ -203,6 +222,7 @@ margin-bottom:20px;
 .section6 p{
     width: 70%;
   margin: 20px auto;
+  text-align:justify;
 }
 
 /* page 7 */
@@ -228,7 +248,7 @@ margin-bottom:20px;
   margin:0px auto;
 }
 .section7 p{
-  text-align:center;
+  text-align:justify;
 }
 .section7 form{
   background:none;
@@ -397,10 +417,11 @@ margin-bottom:20px;
 .section1 .logotext {
   position: absolute;
   top: 120px;
-  width: 100px;
-  font-size: 0.8em;
+  width: 120px;
+  font-size: 1em;
   text-align: center;
   font-family:"HelveticaNeueW02-UltLtE 739241";
+  margin-left:90px;
 }
 .footer_logo_text {
   margin:0px;
@@ -426,8 +447,14 @@ margin-bottom:20px;
   .section1 h2 {
     font-size:2em;
     margin:200px auto 0px;
-    width:100%;
+    width:90%;
+	padding:10px;
     border:none;
+  }
+  
+  .section1 .p11{
+	width:90%;
+	padding:10px;
   }
   .section1 p{
     width:90%;
@@ -466,10 +493,14 @@ margin-bottom:20px;
     width:100%;
     border:none;
   }
+  .section2 .p1 span{
+	width:100%;
+  }
   .section2 .p1{
     padding:20px 10px;
-    margin-top:20%;
+    margin-top:5%;
     color:#fff;
+	width:90%;
   }
   .section2 p {
     width:90%;
@@ -501,14 +532,15 @@ margin-bottom:20px;
   }
   .section5 p{
     margin-left:10px;
-    width:90%;
+    width:80%;
     font-size:0.8em;
   } 
   .section6 .txt6 {
-    background: #1E69DC;
+   /* background: #1E69DC;*/
     padding: 10px 10px;
     margin-top:30px;
   }
+  
   .section6 p{
     margin-left:10px;
     width:90%;

@@ -27,7 +27,7 @@
 
 </style>
 <link rel="stylesheet" href="/jquery.fullPage.css">
-<link rel="stylesheet" href="/sites/all/themes/venture_theme/css/front.css">
+<link rel="stylesheet" href="/sites/all/themes/venture_theme/css/front.css?v=1.0">
 <style>
 </style>
 <script src="/jquery.min.js"></script>
@@ -45,11 +45,13 @@ $(function(){
     navigationTooltips: ['COMMITTED', 'COMPANY PROFILE', 'CORPORATE CULTRE', 'DESIGN CAPACITY', 'PROCUREMENT CAPACITY', 'PROJECT PERFORMANCE', 'SOCIAL RESPONSIBIILITY']
   });
 
+  /*
   $('.section7 h3').click(function(){
     $('.section7 form').css('width','450px').css("margin-top","150px").css("background-color","#f1f1f1");
     $('.section7 form .formdiv').show('slow');
     $('.section7 h3').removeClass('form-btn').css("background",'none').css("border-color", 'none');
   });
+  */
 });
 
 
@@ -68,6 +70,7 @@ function closehomemenu(){
   $('#home-leftmenu').hide();
 }
 function contactusform(){
+/*
   var username = $('#username').val();
   var useremail = $('#useremail').val();
   var userbody = $('#userbody').val();
@@ -94,6 +97,7 @@ function contactusform(){
   }else{
     alert("Please input correct email!");
   }
+  */
 }
 </script>
 
