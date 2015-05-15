@@ -250,7 +250,7 @@
 				</p>
 			</div>
 			<div class="b2-no-h2">
-			<p style="font-weight:bold;">RESPONSIBLE PRODUCTION, PROFESSIONAL TECHNOLOGY AND PEOPLE-ORIENTED SERVICE .</p>
+			<p style="font-weight:bold;">RESPONSIBLE PRODUCTION, PROFESSIONAL TECHNOLOGY AND <br>PEOPLE-ORIENTED SERVICE .</p>
 			<p><img src="/imgs/maps.png" style="width: 24px;vertical-align: middle;"/>ADDRESS : &nbsp;<a href="https://www.google.ca/maps/place/1641+W+Main+St,+Alhambra,+CA+91801%E7%BE%8E%E5%9B%BD/@34.0917722,-118.1416533,17z/data=!3m1!4b1!4m2!3m1!1s0x80c2c51e75da0aa7:0xdd713c117589663f" target="_blank">1641 W MAIN ST 405 ALHAMBRA CA 91801</a></p>
 			<p><img src="/imgs/phone.png" style="width: 24px;vertical-align: middle;" />DIRECT PHONE  : &nbsp;<a href="tel:626-576-8065">(+1) 626-576-8065</a></p>
 			<p><img src="/imgs/email.png" style="width: 24px;vertical-align: middle;" />Email  : &nbsp;<a href="mailto:info@hypecinc.com">info@hypecinc.com</a></p>
@@ -261,7 +261,7 @@
 		<div class="art" style="margin-top:0px;border-top:1px solid rgb(208, 208, 208);color:#fff;padding-top:50px;">
 			<h2 style="color:rgba(26,26,26,.7);">HYPECINC</h2>
 			<p></p>
-			<p class="text-align-center" style="color:rgba(26,26,26,.7);" id="yui_3_17_2_1_1428312185897_420">Sitemap | <a href="/profile">About Us</a> | <a href="/#page7">Contact Us</a> © 2015-2016</p>
+			<p class="text-align-center" style="color:rgba(26,26,26,.7);" id="yui_3_17_2_1_1428312185897_420">Sitemap | <a href="/profile">About Us</a> | <a href="/contactus">Contact Us</a> © 2015-2016</p>
 		</div>
 		<div class="clear"></div>
   </footer>
