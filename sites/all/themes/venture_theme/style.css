@@ -948,6 +948,14 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
   font-family: "HelveticaNeueW02-ThinEx 739247";
 }
 
+.content span.sup{
+	white-space: nowrap;
+  margin-left: 0px;
+  font-size: 0.5em;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
 h2, h3, h4{
   color:#3d9991;
   font-size: 22px;
@@ -1465,6 +1473,7 @@ div.logo_div div{
 #copyright-wrap .art ul li{
   list-style:none;
 }
+
 /*
 #headerimg6 h1.page-title, #headerimg9 h1.page-title, #headerimg10 h1.page-title, #headerimg11 h1.page-title,#headerimg12 h1.page-title,#headerimg13 h1.page-title,#headerimg14 h1.page-title,#headerimg15 h1.page-title,#headerimg16 h1.page-title,#headerimg17 h1.page-title,#headerimg18 h1.page-title{
   margin:0px auto;
